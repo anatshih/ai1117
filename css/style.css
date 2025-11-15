@@ -1,0 +1,573 @@
+/* =========================================
+   0) إعدادات عامة و متغيرات ألوان
+========================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #ff8c00;        /* برتقالي أساسي */
+    --primary-soft: #f97316;   /* برتقالي أفتح */
+    --primary-light: #fff7ed;  /* خلفية برتقالية خفيفة */
+    --bg-body: #f3f4f6;        /* رمادي فاتح لخلفية الصفحة */
+    --bg-card: #ffffff;        /* خلفية الكروت */
+    --text-main: #111827;      /* نص أساسي */
+    --text-muted: #6b7280;     /* نص ثانوي */
+    --border-subtle: #e5e7eb;
+    --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.08);
+    --radius-card: 16px;
+    --radius-pill: 999px;
+    --transition-fast: 0.2s ease;
+    --transition-med: 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    direction: rtl;
+    text-align: right;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* روابط عامة */
+a {
+    color: var(--primary-soft);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: #ea580c;
+}
+
+/* قوائم */
+ul {
+    margin: 0 0 0.75rem 0;
+    padding-right: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.35rem;
+}
+
+/* عناوين */
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+/* فقرات */
+p {
+    margin: 0 0 0.5rem 0;
+}
+
+/* جداول عامة */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.75rem 0 1rem 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+th, td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: #f9fafb;
+    text-align: right;
+    font-weight: 700;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* =========================================
+   1) الحاوية العامة للأقسام
+========================================= */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section {
+    padding: 1.75rem 0;
+    background-color: transparent;
+}
+
+.section.alt {
+    background-color: #e5e7eb33;
+}
+
+.section-title {
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-lead {
+    margin: 0.35rem 0 0.75rem 0;
+    font-size: 0.97rem;
+    color: var(--text-muted);
+}
+
+.section-intro {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+.page-meta {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* شبكة معلومات عامة */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =========================================
+   2) الهيدر الرئيسي و الشعار و القائمة
+========================================= */
+
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-subtle);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0.5rem;
+    gap: 1rem;
+}
+
+/* شعار المقرر */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 30% 20%, #fef3c7, #f97316);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111827;
+    font-weight: 800;
+    font-size: 0.9rem;
+    box-shadow: 0 6px 16px rgba(249, 115, 22, 0.45);
+}
+
+.logo-text h1 {
+    font-size: 1.1rem;
+}
+
+.logo-text p {
+    margin: 0.1rem 0 0 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* القائمة العلوية */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.main-nav a {
+    font-size: 0.9rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-pill);
+    color: #374151;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: background-color var(--transition-fast),
+                color var(--transition-fast),
+                border-color var(--transition-fast),
+                transform var(--transition-fast);
+}
+
+.main-nav a:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-1px);
+}
+
+.main-nav a.active {
+    background-color: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+    box-shadow: 0 8px 18px rgba(249, 115, 22, 0.35);
+}
+
+/* استجابة الهيدر للموبايل */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        justify-content: flex-start;
+    }
+}
+
+/* =========================================
+   3) الكروت العامة و الأزرار العامة
+========================================= */
+
+.card {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-card);
+    padding: 1rem 1rem;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(209, 213, 219, 0.7);
+}
+
+.info-box {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid #e5e7eb;
+}
+
+/* أزرار عامة */
+.btn {
+    border-radius: var(--radius-pill);
+    padding: 0.45rem 1.1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    transition: background-color var(--transition-fast),
+                color var(--transition-fast),
+                box-shadow var(--transition-fast),
+                transform var(--transition-fast);
+}
+
+.btn.primary {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background-color: var(--primary-soft);
+    box-shadow: 0 8px 18px rgba(249, 115, 22, 0.35);
+    transform: translateY(-1px);
+}
+
+.btn.secondary {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+.btn.secondary:hover {
+    background-color: #d4d4d8;
+}
+
+/* شارات بسيطة */
+.badge {
+    display: inline-flex;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    background-color: var(--primary-light);
+    color: #9a3412;
+}
+
+/* =========================================
+   4) صفحة اختيار المسار (track-registration)
+========================================= */
+
+.form-iframe-wrapper {
+    margin-top: 1rem;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid #e5e7eb;
+}
+
+.form-iframe-wrapper iframe {
+    width: 100%;
+    border: none;
+}
+
+/* =========================================
+   5) صفحة مشروع المسار (track-project)
+========================================= */
+
+/* شريط تبويبات المسارات */
+.project-track-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.project-track-tabs .tab-btn {
+    border-radius: var(--radius-pill);
+    padding: 0.5rem 1.25rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+    background-color: #e5e7eb;
+    color: #111827;
+    font-weight: 600;
+    transition: background-color 0.25s ease,
+                color 0.25s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.project-track-tabs .tab-btn:hover {
+    background-color: #d1d5db;
+}
+
+.project-track-tabs .tab-btn.active {
+    background-color: var(--primary);
+    color: #ffffff;
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+}
+
+/* لوحات كل مسار – تأثير Fade */
+.project-track-panel {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity var(--transition-med), max-height var(--transition-med);
+}
+
+.project-track-panel.active {
+    opacity: 1;
+    visibility: visible;
+    max-height: 5000px;
+}
+
+/* شبكة البطاقات داخل المسار */
+.project-question-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .project-question-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* البطاقة الواحدة للسؤال */
+.project-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 1rem 1rem;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    border: 1px solid rgba(209, 213, 219, 0.8);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* رأس البطاقة */
+.project-card-header {
+    margin-bottom: 0.75rem;
+}
+
+.project-card-header h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.project-card-meta {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* زر "اقرأ المزيد" */
+.read-more-btn {
+    margin-top: auto;
+    width: 100%;
+    border-radius: var(--radius-pill);
+    border: none;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    transition: background-color 0.25s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.read-more-btn:hover {
+    background-color: var(--primary-soft);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(249, 115, 22, 0.35);
+}
+
+.read-more-btn span.icon {
+    font-size: 1rem;
+}
+
+/* محتوى السؤال داخل البطاقة */
+.project-card-body {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0;
+    border-top: 1px dashed rgba(148, 163, 184, 0.7);
+    padding-top: 0;
+    transition: opacity var(--transition-med),
+                max-height var(--transition-med),
+                padding-top var(--transition-med),
+                margin-top var(--transition-med);
+}
+
+.project-card-body.open {
+    max-height: 5000px;
+    opacity: 1;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+}
+
+/* نص السؤال */
+.project-question-text {
+    white-space: pre-wrap;
+    font-family: inherit;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    color: #111827;
+}
+
+/* المرفقات */
+.project-attachments {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    border-top: 1px dashed rgba(148, 163, 184, 0.7);
+    padding-top: 0.5rem;
+}
+
+.project-attachments ul {
+    padding-right: 1.2rem;
+    margin: 0.35rem 0;
+}
+
+.project-attachments li {
+    margin-bottom: 0.15rem;
+}
+
+.attachments-note {
+    margin: 0.35rem 0 0;
+    opacity: 0.8;
+    font-size: 0.86rem;
+    color: #6b7280;
+}
+
+/* =========================================
+   6) الفوتر
+========================================= */
+
+.site-footer {
+    background-color: #111827;
+    color: #e5e7eb;
+    padding: 1.25rem 0;
+    margin-top: 1.5rem;
+}
+
+.footer-inner {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-note {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+/* =========================================
+   7) تحسينات للموبايل
+========================================= */
+
+@media (max-width: 640px) {
+    .card {
+        padding: 0.85rem 0.85rem;
+    }
+
+    .section {
+        padding: 1.25rem 0;
+    }
+
+    .section-title {
+        font-size: 1.15rem;
+    }
+
+    .main-nav a {
+        font-size: 0.85rem;
+    }
+}

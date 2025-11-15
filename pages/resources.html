@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>الموارد والأدوات - مقرر الذكاء الاصطناعي (0/1117)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+        /* ===== تنسيقات صفحة الموارد ===== */
+
+        .resource-section {
+            margin-bottom: 3rem;
+        }
+
+        .resource-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .resource-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+            transition: 0.25s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+        }
+
+        .resource-icon {
+            font-size: 2rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .resource-name {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .resource-desc {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .resource-link a {
+            background: #2563eb;
+            color: #fff;
+            padding: 0.45rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            display: inline-block;
+            transition: 0.2s;
+        }
+
+        .resource-link a:hover {
+            background: #1e40af;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="logo-circle">AI</div>
+            <div class="logo-text">
+                <h1>مقرر الذكاء الاصطناعي وتطبيقاته (0/1117)</h1>
+                <p> فرع الخليل</p>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <a href="../index.html">الرئيسية</a>
+            <a href="course-info.html">تعليمات المقرر</a>
+            <a href="track-registration.html">اختيار المسار</a>
+            <a href="track-project.html">مشروع المسار</a>
+            <a href="project-report.html">نموذج تقرير المشروع</a>
+            <a href="faq.html">الأسئلة الشائعة</a>
+            <a class="active" href="resources.html">الموارد والأدوات</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="section">
+        <div class="container">
+
+            <h2 class="section-title">🧰 الموارد والأدوات</h2>
+            <p class="page-lead">
+                قائمة شاملة لأفضل أدوات الذكاء الاصطناعي المصنّفة حسب المجال:
+            </p>
+
+            <!-- ————————————————————————
+                 1) النماذج اللغوية العامة
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">🧠 النماذج اللغوية العامة</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">🤖</div><div class="resource-name">ChatGPT</div><div class="resource-desc">نموذج لغوي ذكي متعدد الاستخدامات.</div><div class="resource-link"><a href="https://chat.openai.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🧠</div><div class="resource-name">Claude</div><div class="resource-desc">مساعد لغوي قوي للكتابة والتحليل.</div><div class="resource-link"><a href="https://claude.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🌐</div><div class="resource-name">Google Gemini</div><div class="resource-desc">نموذج متعدد الوسائط من Google.</div><div class="resource-link"><a href="https://gemini.google.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">💼</div><div class="resource-name">Microsoft Copilot</div><div class="resource-desc">مساعد ذكاء اصطناعي مدمج مع خدمات Microsoft.</div><div class="resource-link"><a href="https://copilot.microsoft.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🔍</div><div class="resource-name">Perplexity</div><div class="resource-desc">محرك بحث ذكي قائم على الذكاء الاصطناعي.</div><div class="resource-link"><a href="https://www.perplexity.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🧬</div><div class="resource-name">Meta LLaMA</div><div class="resource-desc">نموذج لغوي مفتوح المصدر من Meta.</div><div class="resource-link"><a href="https://ai.meta.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">⚡</div><div class="resource-name">Mistral AI</div><div class="resource-desc">نماذج لغوية خفيفة وسريعة.</div><div class="resource-link"><a href="https://mistral.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">✍️</div><div class="resource-name">Cohere</div><div class="resource-desc">نماذج كتابة وتحليل نصوص.</div><div class="resource-link"><a href="https://cohere.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🇨🇳</div><div class="resource-name">Qwen</div><div class="resource-desc">نموذج قوي من Alibaba.</div><div class="resource-link"><a href="https://chat.qwen.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🐉</div><div class="resource-name">DeepSeek</div><div class="resource-desc">نموذج صيني متقدم جداً.</div><div class="resource-link"><a href="https://www.deepseek.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🇨🇳</div><div class="resource-name">ERNIE Bot</div><div class="resource-desc">بديل صيني قوي لـ ChatGPT.</div><div class="resource-link"><a href="https://yiyan.baidu.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🔥</div><div class="resource-name">Tencent Hunyuan</div><div class="resource-desc">نموذج متعدد الوسائط.</div><div class="resource-link"><a href="https://hunyuan.tencent.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🌙</div><div class="resource-name">Moonshot Kimi</div><div class="resource-desc">متخصص في معالجة ملفات ضخمة.</div><div class="resource-link"><a href="https://kimi.moonshot.cn" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">💡</div><div class="resource-name">Zhipu GLM</div><div class="resource-desc">نموذج لغوي قوي مفتوح المصدر.</div><div class="resource-link"><a href="https://chatglm.cn" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🍃</div><div class="resource-name">Doubao</div><div class="resource-desc">نموذج لغوي من ByteDance.</div><div class="resource-link"><a href="https://www.doubao.com" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+            <!-- ————————————————————————
+                 2) كتابة المحتوى
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">✍️ كتابة المحتوى</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">✍️</div><div class="resource-name">Grammarly</div><div class="resource-desc">أداة تدقيق لغوي ذكية.</div><div class="resource-link"><a href="https://grammarly.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">♻️</div><div class="resource-name">QuillBot</div><div class="resource-desc">إعادة صياغة وتحسين النصوص.</div><div class="resource-link"><a href="https://quillbot.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📘</div><div class="resource-name">Smodin</div><div class="resource-desc">كتابة أكاديمية وتحليل نصوص.</div><div class="resource-link"><a href="https://smodin.io" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📝</div><div class="resource-name">Wordtune</div><div class="resource-desc">تحسين وصياغة النصوص.</div><div class="resource-link"><a href="https://www.wordtune.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">💬</div><div class="resource-name">Copy.ai</div><div class="resource-desc">كتابة تسويقية ذكية.</div><div class="resource-link"><a href="https://copy.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">✨</div><div class="resource-name">Writesonic</div><div class="resource-desc">مولد نصوص ومحتوى إبداعي.</div><div class="resource-link"><a href="https://writesonic.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">⚡</div><div class="resource-name">Rytr</div><div class="resource-desc">أداة كتابة سريعة بالذكاء الاصطناعي.</div><div class="resource-link"><a href="https://rytr.me" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🚀</div><div class="resource-name">Jasper</div><div class="resource-desc">منصة مميزة لكتابة المحتوى التسويقي.</div><div class="resource-link"><a href="https://jasper.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">💡</div><div class="resource-name">HyperWrite</div><div class="resource-desc">مساعد كتابة مبتكر.</div><div class="resource-link"><a href="https://hyperwriteai.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📚</div><div class="resource-name">Hemingway Editor</div><div class="resource-desc">تحسين أسلوب الكتابة وتبسيط الجمل.</div><div class="resource-link"><a href="https://hemingwayapp.com" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+            <!-- ————————————————————————
+                 3) الترجمة
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">🌍 الترجمة</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">🌐</div><div class="resource-name">DeepL</div><div class="resource-desc">أدق مترجم آلي عالمي.</div><div class="resource-link"><a href="https://deepl.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🔤</div><div class="resource-name">Google Translate</div><div class="resource-desc">ترجمة متعددة اللغات.</div><div class="resource-link"><a href="https://translate.google.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🎧</div><div class="resource-name">Seamless M4T</div><div class="resource-desc">ترجمة صوت ونص من Meta.</div><div class="resource-link"><a href="https://ai.meta.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📚</div><div class="resource-name">LingvaNex</div><div class="resource-desc">مترجم متعدد الاستخدامات.</div><div class="resource-link"><a href="https://lingvanex.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🇰🇷</div><div class="resource-name">Papago</div><div class="resource-desc">مترجم كوري مدعوم بالذكاء الاصطناعي.</div><div class="resource-link"><a href="https://papago.naver.com" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+            <!-- ————————————————————————
+                 4) توليد الصور
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">🎨 توليد الصور</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">🖼️</div><div class="resource-name">Midjourney</div><div class="resource-desc">أرقى مولد صور فنية.</div><div class="resource-link"><a href="https://midjourney.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🎨</div><div class="resource-name">DALL·E</div><div class="resource-desc">توليد صور من النص.</div><div class="resource-link"><a href="https://openai.com/dall-e" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🌈</div><div class="resource-name">Stable Diffusion</div><div class="resource-desc">نموذج مفتوح المصدر لتوليد الصور.</div><div class="resource-link"><a href="https://stability.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🖌️</div><div class="resource-name">Leonardo AI</div><div class="resource-desc">صور واقعية عالية الجودة.</div><div class="resource-link"><a href="https://leonardo.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🪄</div><div class="resource-name">Playground AI</div><div class="resource-desc">منصة مجانية لتوليد الصور.</div><div class="resource-link"><a href="https://playgroundai.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🔠</div><div class="resource-name">Ideogram</div><div class="resource-desc">إضافة نصوص داخل الصور.</div><div class="resource-link"><a href="https://ideogram.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🎭</div><div class="resource-name">Fotor</div><div class="resource-desc">مولد صور وتصميم.</div><div class="resource-link"><a href="https://fotor.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🎨</div><div class="resource-name">Pikaso</div><div class="resource-desc">رسومات بالذكاء الاصطناعي.</div><div class="resource-link"><a href="https://www.freepik.com/pikaso" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🧩</div><div class="resource-name">Recraft</div><div class="resource-desc">إنشاء شعارات ورسومات.</div><div class="resource-link"><a href="https://recraft.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">⚡</div><div class="resource-name">Pollinations AI</div><div class="resource-desc">توليد صور فورية.</div><div class="resource-link"><a href="https://pollinations.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+            <!-- ————————————————————————
+                 5) معالجة الصور
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">🛠️ معالجة الصور</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">📸</div><div class="resource-name">Remini</div><div class="resource-desc">تحسين الصور القديمة.</div><div class="resource-link"><a href="https://remini.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🧼</div><div class="resource-name">Clipdrop</div><div class="resource-desc">تنظيف الصور وتحسينها.</div><div class="resource-link"><a href="https://clipdrop.co" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🚫</div><div class="resource-name">Remove.bg</div><div class="resource-desc">إزالة الخلفيات.</div><div class="resource-link"><a href="https://remove.bg" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🔍</div><div class="resource-name">Upscale.media</div><div class="resource-desc">زيادة وضوح الصور.</div><div class="resource-link"><a href="https://upscale.media" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">⚙️</div><div class="resource-name">LetsEnhance</div><div class="resource-desc">تحسين الدقة تلقائياً.</div><div class="resource-link"><a href="https://letsenhance.io" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📷</div><div class="resource-name">VanceAI</div><div class="resource-desc">تحسين جودة الصور والوجوه.</div><div class="resource-link"><a href="https://vanceai.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🪄</div><div class="resource-name">PhotoRoom</div><div class="resource-desc">إزالة الخلفيات وتحرير الصور.</div><div class="resource-link"><a href="https://photoroom.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🖥️</div><div class="resource-name">Photopea</div><div class="resource-desc">محرر صور مشابه للفوتوشوب.</div><div class="resource-link"><a href="https://photopea.com" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+            <!-- ————————————————————————
+                 6) الفيديو
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">🎥 الفيديو</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">🎬</div><div class="resource-name">Runway ML</div><div class="resource-desc">تعديل فيديو بالذكاء الاصطناعي.</div><div class="resource-link"><a href="https://runwayml.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🎞️</div><div class="resource-name">Pika Labs</div><div class="resource-desc">توليد فيديو من النص.</div><div class="resource-link"><a href="https://pika.art" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">✨</div><div class="resource-name">Genmo</div><div class="resource-desc">تحريك الصور وإنشاء فيديو.</div><div class="resource-link"><a href="https://genmo.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🎥</div><div class="resource-name">PixVerse</div><div class="resource-desc">توليد فيديو AI.</div><div class="resource-link"><a href="https://pixverse.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">✂️</div><div class="resource-name">CapCut</div><div class="resource-desc">تعديل فيديو مجاني بالكامل.</div><div class="resource-link"><a href="https://capcut.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🎙️</div><div class="resource-name">Descript</div><div class="resource-desc">تحرير فيديو وصوت نصياً.</div><div class="resource-link"><a href="https://descript.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🎬</div><div class="resource-name">InVideo</div><div class="resource-desc">إنشاء فيديو من النصوص.</div><div class="resource-link"><a href="https://invideo.io" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📺</div><div class="resource-name">Veed.io</div><div class="resource-desc">تحرير فيديو سهل للمبتدئين.</div><div class="resource-link"><a href="https://veed.io" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+            <!-- ————————————————————————
+                 7) الصوت
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">🔊 الصوت</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">🎧</div><div class="resource-name">ElevenLabs</div><div class="resource-desc">أفضل منصة لإنشاء أصوات بشرية طبيعية.</div><div class="resource-link"><a href="https://elevenlabs.io" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🎤</div><div class="resource-name">Murf AI</div><div class="resource-desc">أصوات احترافية للعرض التقديمي.</div><div class="resource-link"><a href="https://murf.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🔊</div><div class="resource-name">Play.ht</div><div class="resource-desc">تحويل النص إلى صوت بجودة عالية.</div><div class="resource-link"><a href="https://play.ht" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📢</div><div class="resource-name">Natural Readers</div><div class="resource-desc">قارئ نصوص صوتي.</div><div class="resource-link"><a href="https://naturalreaders.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">💬</div><div class="resource-name">Coqui TTS</div><div class="resource-desc">محرك صوت مفتوح المصدر.</div><div class="resource-link"><a href="https://coqui.ai" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+            <!-- ————————————————————————
+                 8) تحليل البيانات
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">📊 تحليل البيانات</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">📈</div><div class="resource-name">Kaggle</div><div class="resource-desc">منصة مسابقات وتحليل بيانات.</div><div class="resource-link"><a href="https://kaggle.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">💻</div><div class="resource-name">Google Colab</div><div class="resource-desc">تشغيل Python سحابياً.</div><div class="resource-link"><a href="https://colab.research.google.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📚</div><div class="resource-name">Jupyter AI</div><div class="resource-desc">دفاتر برمجية ذكية للتعلم الآلي.</div><div class="resource-link"><a href="https://jupyter.org" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🔎</div><div class="resource-name">Wolfram Alpha</div><div class="resource-desc">محرك معرفة ذكي.</div><div class="resource-link"><a href="https://wolframalpha.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🧠</div><div class="resource-name">IBM Watson Studio</div><div class="resource-desc">تحليل بيانات متقدم.</div><div class="resource-link"><a href="https://www.ibm.com/watson" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+            <!-- ————————————————————————
+                 9) البرمجة
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">💻 البرمجة</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">💻</div><div class="resource-name">GitHub Copilot</div><div class="resource-desc">مساعد برمجة يقترح أكواد جاهزة.</div><div class="resource-link"><a href="https://github.com/features/copilot" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">⚡</div><div class="resource-name">Cursor IDE</div><div class="resource-desc">محرر برمجي مدعوم بالذكاء الاصطناعي.</div><div class="resource-link"><a href="https://cursor.sh" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🌐</div><div class="resource-name">Replit</div><div class="resource-desc">بيئة برمجة سحابية.</div><div class="resource-link"><a href="https://replit.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">🛠️</div><div class="resource-name">Codeium</div><div class="resource-desc">مساعد برمجة مجاني.</div><div class="resource-link"><a href="https://codeium.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">💡</div><div class="resource-name">Tabnine</div><div class="resource-desc">اقتراحات أكواد ذكية.</div><div class="resource-link"><a href="https://tabnine.com" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+            <!-- ————————————————————————
+                 10) التعليم
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">📚 التعليم</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">🎓</div><div class="resource-name">Khanmigo</div><div class="resource-desc">مساعد تعليم من Khan Academy.</div><div class="resource-link"><a href="https://khanacademy.org" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📘</div><div class="resource-name">TutorAI</div><div class="resource-desc">شرح الدروس وتبسيط المفاهيم.</div><div class="resource-link"><a href="https://tutorai.me" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+            <!-- ————————————————————————
+                 11) الإنتاجية
+            ———————————————————————— -->
+            <div class="resource-section">
+                <h3 class="resource-title">🗂️ الإنتاجية</h3>
+                <div class="resources-grid">
+
+                    <div class="resource-card"><div class="resource-icon">📒</div><div class="resource-name">Notion AI</div><div class="resource-desc">إدارة المشاريع والملاحظات.</div><div class="resource-link"><a href="https://notion.so" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📝</div><div class="resource-name">Taskade</div><div class="resource-desc">تنظيم مهام الفرق.</div><div class="resource-link"><a href="https://taskade.com" target="_blank">زيارة الموقع</a></div></div>
+
+                    <div class="resource-card"><div class="resource-icon">📊</div><div class="resource-name">ClickUp AI</div><div class="resource-desc">إدارة عمل وفرق.</div><div class="resource-link"><a href="https://clickup.com" target="_blank">زيارة الموقع</a></div></div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>&copy; 2025 أ. أحمد عوني النتشة – فرع الخليل | مقرر الذكاء الاصطناعي وتطبيقاته (0/1117)</p>
+        <p class="footer-note">هذا الموقع مرجع مساعد، ولا يغني عن التعليمات الرسمية المنشورة في البوابة الأكاديمية.</p>
+    </div>
+</footer>
+
+</body>
+</html>

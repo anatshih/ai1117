@@ -51,6 +51,21 @@
                 <li>يجب توثيق خطوات العمل والـ Prompts المستخدمة داخل تقرير المشروع.</li>
             </ul>
 
+            <!-- مكونات التسليم -->
+            <div class="delivery-box" style="background:#f0f7ff;border-right:4px solid #3b82f6;border-radius:10px;padding:1.5rem 1.8rem;margin:1.5rem 0;">
+                <h3 style="margin-top:0;color:#1e40af;">📦 مكونات التسليم</h3>
+                <p style="margin-bottom:0.8rem;">يسلّم الطالب <strong>تقريرًا منظمًا</strong> يتضمن العناصر الآتية:</p>
+                <ol style="line-height:2;padding-right:1.2rem;">
+                    <li><strong>صفحة عنوان</strong> — اسم الطالب، الرقم الجامعي، المسار المختار، السؤال المختار</li>
+                    <li><strong>مقدمة قصيرة</strong> — لماذا اختار هذا الموضوع، وما الهدف من المشروع</li>
+                    <li><strong>خطوات التنفيذ</strong> — كيف بدأ، الأدوات المستخدمة، كيف طوّر النتيجة خطوة بخطوة</li>
+                    <li><strong>البرومبتات المستخدمة</strong> — البرومبتات الأساسية وكيف عدّلها من مرة إلى أخرى</li>
+                    <li><strong>صور شاشة</strong> — من مراحل العمل (وليس فقط النتيجة النهائية)</li>
+                    <li><strong>المخرج النهائي</strong> — النص أو التصميم أو الصفحة أو التحليل</li>
+                    <li><strong>التقييم الذاتي والفوائد</strong> — ماذا تعلّم، ما الصعوبات، ما الذي كان يمكن تحسينه</li>
+                </ol>
+            </div>
+
             <div class="project-track-tabs">
                 <button class="tab-btn active" data-track-tab="researcher">🔍 مسار الباحث</button>
                 <button class="tab-btn" data-track-tab="literature">✍️ مسار الأدب والكتابة</button>
@@ -76,14 +91,37 @@
                     <article class="project-card">
                         <div class="project-card-header">
                             <h4>السؤال الأول</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
+                            <p class="project-card-meta">دراسة مصغّرة حول سلوك الطلاب أو المستهلكين</p>
                         </div>
                         <button class="read-more-btn" data-target="q-researcher-1">
                             <span class="icon">⬇️</span>
                             <span class="label">اقرأ المزيد</span>
                         </button>
                         <div id="q-researcher-1" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
+                            <pre class="project-question-text">اختر موضوعًا قريبًا من الواقع، مثل:
+• استخدام الطلبة لتطبيقات الذكاء الاصطناعي
+• التسوق الإلكتروني بين الشباب
+• تفضيلات الطلبة في التعلم الرقمي
+• أكثر أنواع المحتوى التي تجذب المستخدمين
+
+ثم نفّذ دراسة مبسطة وفق الخطوات الآتية:
+1. صمّم أداة جمع بيانات بسيطة تحتوي على 8 إلى 10 أسئلة
+2. اجمع بيانات من 15 إلى 20 مشاركًا
+3. نظّم البيانات في جدول
+4. استخدم أداة ذكاء اصطناعي لمساعدتك في:
+   - قراءة النتائج
+   - استخراج الأنماط المتكررة
+   - كتابة استنتاجات واضحة
+5. اكتب ملخصًا نهائيًا يجيب عن السؤال:
+   ماذا تكشف هذه البيانات عن سلوك الفئة التي درستها؟
+
+📄 المطلوب النهائي — تقرير تحليلي يتضمن:
+✔ عنوان الدراسة
+✔ أسئلة الدراسة
+✔ وصف العينة
+✔ جدول أو جداول للنتائج
+✔ 3 إلى 5 ملاحظات تحليلية
+✔ خاتمة مختصرة</pre>
                         </div>
                     </article>
 
@@ -91,31 +129,39 @@
                     <article class="project-card">
                         <div class="project-card-header">
                             <h4>السؤال الثاني</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
+                            <p class="project-card-meta">تحليل نص أو تقرير وبناء قراءة عربية له</p>
                         </div>
                         <button class="read-more-btn" data-target="q-researcher-2">
                             <span class="icon">⬇️</span>
                             <span class="label">اقرأ المزيد</span>
                         </button>
                         <div id="q-researcher-2" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
+                            <pre class="project-question-text">اختر نصًا أو مقالًا أو تقريرًا متوسط الطول باللغة الإنجليزية في موضوع مثل:
+• الذكاء الاصطناعي في التعليم
+• الذكاء الاصطناعي في سوق العمل
+• تأثير التكنولوجيا على سلوك المستهلك
+• التجارة الإلكترونية
+
+ثم قم بما يلي:
+1. لخص النص
+2. استخرج أهم الأفكار الرئيسة
+3. استخرج الكلمات المفتاحية
+4. ترجم جزءًا مهمًا منه إلى العربية ترجمة مفهومة
+5. اطلب من الذكاء الاصطناعي مساعدتك في إعادة الصياغة
+6. اكتب قراءة تحليلية بالعربية توضّح:
+   - ماذا يقول النص؟
+   - ما الفكرة المركزية؟
+   - ما أهم النقاط التي يمكن الاستفادة منها؟
+
+📄 المطلوب النهائي — تقرير يحتوي على:
+✔ النص المختار أو رابطه
+✔ ملخص عربي
+✔ الكلمات المفتاحية
+✔ ترجمة فقرة أو أكثر
+✔ تحليل شخصي مدعوم بمساعدة الذكاء الاصطناعي</pre>
                         </div>
                     </article>
 
-                    <!-- سؤال 3 - مسار الباحث -->
-                    <article class="project-card">
-                        <div class="project-card-header">
-                            <h4>السؤال الثالث</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
-                        </div>
-                        <button class="read-more-btn" data-target="q-researcher-3">
-                            <span class="icon">⬇️</span>
-                            <span class="label">اقرأ المزيد</span>
-                        </button>
-                        <div id="q-researcher-3" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
-                        </div>
-                    </article>
                 </div>
             </section>
 
@@ -131,14 +177,40 @@
                     <article class="project-card">
                         <div class="project-card-header">
                             <h4>السؤال الأول</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
+                            <p class="project-card-meta">كتابة قصة إبداعية وتطويرها بالذكاء الاصطناعي</p>
                         </div>
                         <button class="read-more-btn" data-target="q-literature-1">
                             <span class="icon">⬇️</span>
                             <span class="label">اقرأ المزيد</span>
                         </button>
                         <div id="q-literature-1" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
+                            <pre class="project-question-text">اكتب قصة قصيرة في أحد الموضوعات الآتية:
+• اجتماعي
+• إنساني
+• تعليمي
+• خيال علمي
+• قصة تحمل رسالة أخلاقية أو فكرية
+
+على أن تمر القصة بالمراحل الآتية:
+1. وضع فكرة أولية للقصة
+2. تحديد الشخصيات
+3. تحديد بداية ووسط ونهاية
+4. استخدام الذكاء الاصطناعي لتوليد مسودة أولى
+5. تعديل النص وتحسين اللغة والأسلوب
+6. كتابة النسخة النهائية بأسلوب مترابط وواضح
+
+يُفضَّل أن توضّح كيف ساعدك الذكاء الاصطناعي في:
+- توليد الفكرة
+- اقتراح الحوار
+- تحسين الوصف
+- تحسين النهاية
+
+📄 المطلوب النهائي:
+✔ قصة من 300 إلى 500 كلمة
+✔ عنوان مناسب
+✔ وصف موجز لفكرة القصة
+✔ عرض مراحل تطويرها
+✔ مقارنة بسيطة بين المسودة الأولى والنسخة النهائية</pre>
                         </div>
                     </article>
 
@@ -146,31 +218,42 @@
                     <article class="project-card">
                         <div class="project-card-header">
                             <h4>السؤال الثاني</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
+                            <p class="project-card-meta">إنتاج محتوى رقمي متكامل حول موضوع واحد</p>
                         </div>
                         <button class="read-more-btn" data-target="q-literature-2">
                             <span class="icon">⬇️</span>
                             <span class="label">اقرأ المزيد</span>
                         </button>
                         <div id="q-literature-2" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
+                            <pre class="project-question-text">اختر موضوعًا واحدًا، مثل:
+• أهمية القراءة
+• الاستخدام الواعي للذكاء الاصطناعي
+• الصحة النفسية للطلبة
+• مهارات النجاح الجامعي
+• أخطار الإدمان الرقمي
+
+ثم أنشئ حزمة محتوى متكاملة باستخدام الذكاء الاصطناعي تشمل:
+• مقالًا قصيرًا
+• 3 منشورات قصيرة لوسائل التواصل
+• عنوانًا جذابًا
+• وصفًا مختصرًا يصلح للنشر
+• إعادة صياغة المحتوى بأكثر من أسلوب
+
+المطلوب هنا ليس فقط الكتابة، بل إظهار قدرتك على:
+- تغيير الأسلوب حسب الجمهور
+- تنظيم الأفكار
+- تحسين اللغة
+- استخدام البرومبت بشكل ذكي
+
+📄 المطلوب النهائي — تقرير يحتوي على:
+✔ الموضوع المختار
+✔ الجمهور المستهدف
+✔ المقال
+✔ المنشورات الثلاثة
+✔ شرح كيف استخدمت الذكاء الاصطناعي لتطوير المحتوى</pre>
                         </div>
                     </article>
 
-                    <!-- سؤال 3 -->
-                    <article class="project-card">
-                        <div class="project-card-header">
-                            <h4>السؤال الثالث</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
-                        </div>
-                        <button class="read-more-btn" data-target="q-literature-3">
-                            <span class="icon">⬇️</span>
-                            <span class="label">اقرأ المزيد</span>
-                        </button>
-                        <div id="q-literature-3" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
-                        </div>
-                    </article>
                 </div>
             </section>
 
@@ -186,14 +269,38 @@
                     <article class="project-card">
                         <div class="project-card-header">
                             <h4>السؤال الأول</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
+                            <p class="project-card-meta">بناء حملة بصرية مصغّرة لفكرة أو منتج</p>
                         </div>
                         <button class="read-more-btn" data-target="q-design-1">
                             <span class="icon">⬇️</span>
                             <span class="label">اقرأ المزيد</span>
                         </button>
                         <div id="q-design-1" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
+                            <pre class="project-question-text">اختر واحدًا مما يلي:
+• منتج غذائي
+• منتج تعليمي
+• مبادرة مجتمعية
+• حملة توعوية
+• مشروع شخصي أو خدمة صغيرة
+
+ثم قم بتصميم حملة بصرية مصغّرة تتكون من:
+• اسم أو عنوان للحملة
+• شعار أو عبارة رئيسية
+• بوستر رئيسي
+• منشورين بصريين إضافيين
+• نص قصير يشرح الفكرة
+• تصور لفيديو قصير أو Storyboard من 4 إلى 6 لقطات
+
+يجب أن توضّح في تقريرك:
+- من هو الجمهور المستهدف
+- لماذا اخترت هذا الأسلوب البصري
+- كيف ساعدك الذكاء الاصطناعي في الصور أو النصوص أو الأفكار
+
+📄 المطلوب النهائي — ملف أو تقرير يتضمن:
+✔ الفكرة العامة للحملة
+✔ التصميمات النهائية
+✔ وصف كل تصميم ووظيفته
+✔ مخطط الفيديو أو القصة البصرية</pre>
                         </div>
                     </article>
 
@@ -201,31 +308,39 @@
                     <article class="project-card">
                         <div class="project-card-header">
                             <h4>السؤال الثاني</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
+                            <p class="project-card-meta">بناء هوية بصرية شخصية بسيطة</p>
                         </div>
                         <button class="read-more-btn" data-target="q-design-2">
                             <span class="icon">⬇️</span>
                             <span class="label">اقرأ المزيد</span>
                         </button>
                         <div id="q-design-2" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
+                            <pre class="project-question-text">أنشئ هوية بصرية لنفسك أو لاسم افتراضي بوصفك:
+• مصممًا مبتدئًا
+• صانع محتوى
+• طالبًا يقدّم نفسه مهنيًا
+• صاحب مشروع رقمي ناشئ
+
+يشمل المشروع:
+• اسم الهوية
+• شعار مبسط أو رمز بصري
+• ألوان معتمدة
+• خط أو أسلوب بصري مقترح
+• بطاقة تعريف أو منشور تعريفي
+• تصميم واحد دعائي أو تعريفي
+
+وفي التقرير، اشرح:
+- لماذا اخترت هذه الألوان
+- ما الرسالة التي تريد إيصالها
+- كيف ساعدك الذكاء الاصطناعي في بناء الفكرة أو تطوير الشكل
+
+📄 المطلوب النهائي:
+✔ هوية بصرية مصغّرة
+✔ 2 إلى 3 نماذج تطبيقية
+✔ شرح منطقي للعناصر البصرية</pre>
                         </div>
                     </article>
 
-                    <!-- سؤال 3 -->
-                    <article class="project-card">
-                        <div class="project-card-header">
-                            <h4>السؤال الثالث</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
-                        </div>
-                        <button class="read-more-btn" data-target="q-design-3">
-                            <span class="icon">⬇️</span>
-                            <span class="label">اقرأ المزيد</span>
-                        </button>
-                        <div id="q-design-3" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
-                        </div>
-                    </article>
                 </div>
             </section>
 
@@ -241,14 +356,38 @@
                     <article class="project-card">
                         <div class="project-card-header">
                             <h4>السؤال الأول</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
+                            <p class="project-card-meta">إنشاء صفحة هبوط لفكرة مشروع</p>
                         </div>
                         <button class="read-more-btn" data-target="q-programming-1">
                             <span class="icon">⬇️</span>
                             <span class="label">اقرأ المزيد</span>
                         </button>
                         <div id="q-programming-1" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
+                            <pre class="project-question-text">ابتكر فكرة مشروع بسيط، مثل:
+• متجر صغير
+• خدمة طلابية
+• منتج رقمي
+• منصة تعليمية مصغّرة
+• خدمة تعتمد على الذكاء الاصطناعي
+
+ثم أنشئ صفحة هبوط بسيطة تعرض:
+• اسم المشروع
+• فكرته
+• الفئة المستهدفة
+• ميزاته
+• صورة أو تصميم مناسب
+• زر دعوة لاتخاذ إجراء (Call to Action)
+
+لا يقتصر المطلوب على كتابة HTML فقط، بل يجب أيضًا:
+- وصف فكرة المشروع
+- توضيح من هو العميل المستهدف
+- كتابة نص دعائي مناسب
+- شرح كيف ساعدك الذكاء الاصطناعي في الكود أو التصميم أو الصياغة
+
+📄 المطلوب النهائي:
+✔ صفحة HTML تعمل
+✔ شرح مكوناتها
+✔ توضيح الهدف التسويقي منها</pre>
                         </div>
                     </article>
 
@@ -256,31 +395,37 @@
                     <article class="project-card">
                         <div class="project-card-header">
                             <h4>السؤال الثاني</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
+                            <p class="project-card-meta">دراسة فكرة متجر أو خدمة رقمية وتسويقها</p>
                         </div>
                         <button class="read-more-btn" data-target="q-programming-2">
                             <span class="icon">⬇️</span>
                             <span class="label">اقرأ المزيد</span>
                         </button>
                         <div id="q-programming-2" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
+                            <pre class="project-question-text">اختر فكرة مثل:
+• متجر ملابس
+• متجر أدوات تقنية
+• متجر منتجات محلية
+• خدمة تصميم
+• خدمة تعليمية
+
+ثم قم بالآتي:
+1. حدّد الفئة المستهدفة
+2. اشرح احتياجاتها
+3. صغ عرضًا تسويقيًا مختصرًا
+4. أنشئ نصًا إعلانيًا
+5. اقترح شكل الصفحة الرئيسة أو الواجهة
+6. استخدم الذكاء الاصطناعي لاقتراح تحسينات على تجربة المستخدم
+
+📄 المطلوب النهائي — تقرير يتضمن:
+✔ وصف المشروع أو المتجر
+✔ الجمهور المستهدف
+✔ التحليل التسويقي
+✔ النصوص الإعلانية
+✔ نموذج أولي بسيط للواجهة أو رسم تخطيطي لها</pre>
                         </div>
                     </article>
 
-                    <!-- سؤال 3 -->
-                    <article class="project-card">
-                        <div class="project-card-header">
-                            <h4>السؤال الثالث</h4>
-                            <p class="project-card-meta">سيتم إدراج أسئلة المشروع لاحقاً</p>
-                        </div>
-                        <button class="read-more-btn" data-target="q-programming-3">
-                            <span class="icon">⬇️</span>
-                            <span class="label">اقرأ المزيد</span>
-                        </button>
-                        <div id="q-programming-3" class="project-card-body">
-                            <pre class="project-question-text">سيتم إدراج أسئلة المشروع لاحقاً</pre>
-                        </div>
-                    </article>
                 </div>
             </section>
 

@@ -1,66 +1,56 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // تبويبات المسارات في صفحة مشروع المسار
+    const revealItems = document.querySelectorAll('.bento-card, .track-card, .resource-card, .quick-track, .faq-item, .placeholder-card, .delivery-list li');
+
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealItems.forEach(item => {
+            item.classList.add('reveal-target');
+            observer.observe(item);
+        });
+    }
+
     const tabButtons = document.querySelectorAll('[data-track-tab]');
     const panels = document.querySelectorAll('.project-track-panel');
 
     function activateTrack(trackKey) {
-        // تفعيل زر المسار
-        tabButtons.forEach(btn => {
-            if (btn.dataset.trackTab === trackKey) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-            }
+        tabButtons.forEach(button => {
+            button.classList.toggle('active', button.dataset.trackTab === trackKey);
         });
 
-        // إظهار/إخفاء لوحات المسارات
         panels.forEach(panel => {
-            if (panel.dataset.trackPanel === trackKey) {
-                panel.classList.add('active');
-            } else {
-                panel.classList.remove('active');
-            }
+            panel.classList.toggle('active', panel.dataset.trackPanel === trackKey);
         });
     }
 
-    // ربط أزرار التبويب بالوظيفة
-    tabButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const trackKey = btn.dataset.trackTab;
-            activateTrack(trackKey);
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            activateTrack(button.dataset.trackTab);
         });
     });
 
-    // تفعيل أول مسار تلقائيًا إن وجد
     if (tabButtons.length && panels.length) {
         activateTrack(tabButtons[0].dataset.trackTab);
     }
 
-    // إدارة "اقرأ المزيد" في بطاقات الأسئلة (Toggle لكل بطاقة)
-    const readMoreButtons = document.querySelectorAll('.read-more-btn');
+    const faqItems = document.querySelectorAll('.faq-item');
 
-    readMoreButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const targetId = button.getAttribute('data-target');
-            const body = document.getElementById(targetId);
-            if (!body) return;
+    faqItems.forEach(item => {
+        const toggle = item.querySelector('.faq-toggle');
+        const icon = item.querySelector('.faq-icon');
 
-            const labelSpan = button.querySelector('.label');
-            const iconSpan = button.querySelector('.icon');
+        if (!toggle) return;
 
-            const isOpen = body.classList.contains('open');
-
-            if (isOpen) {
-                // إخفاء التفاصيل
-                body.classList.remove('open');
-                if (labelSpan) labelSpan.textContent = 'اقرأ المزيد';
-                if (iconSpan) iconSpan.textContent = '⬇️';
-            } else {
-                // إظهار التفاصيل
-                body.classList.add('open');
-                if (labelSpan) labelSpan.textContent = 'إخفاء التفاصيل';
-                if (iconSpan) iconSpan.textContent = '⬆️';
-            }
+        toggle.addEventListener('click', () => {
+            const isOpen = item.classList.toggle('open');
+            if (icon) icon.textContent = isOpen ? '-' : '+';
         });
     });
 });

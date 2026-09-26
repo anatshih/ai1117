@@ -5,75 +5,6 @@
     <title>اختيار المسار - مقرر الذكاء الاصطناعي وتطبيقاته (0/1117)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/style.css" />
-
-    <!-- تنسيقات خاصة بصفحة اختيار المسار -->
-    <style>
-     .tracks-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* شبكة 2×2 */
-    gap: 1.25rem;
-    margin-top: 1.25rem;
-}
-
-/* في الشاشات الصغيرة جدًا (أقل من 450px) تصبح عمود واحد */
-@media (max-width: 450px) {
-    .tracks-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-        .track-card {
-            background-color: #ffffff;
-            border-radius: 16px;
-            padding: 1rem 1rem;
-            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
-            border: 1px solid rgba(209, 213, 219, 0.9);
-            display: flex;
-            flex-direction: column;
-            gap: 0.35rem;
-        }
-
-        .track-name {
-            font-size: 1.05rem;
-            font-weight: 800;
-            margin: 0;
-            padding: 0.25rem 0.6rem;
-            border-radius: 999px;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.35rem;
-            background-color: var(--primary-light);
-            color: #9a3412;
-        }
-
-        .track-name span.icon {
-            font-size: 1.1rem;
-        }
-
-        .track-desc {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-top: 0.4rem;
-        }
-
-        .track-card ul {
-            margin-top: 0.4rem;
-            margin-bottom: 0;
-            padding-right: 1.1rem;
-            font-size: 0.9rem;
-        }
-
-        .track-card li {
-            margin-bottom: 0.2rem;
-        }
-
-        .track-note {
-            margin-top: 0.4rem;
-            font-size: 0.85rem;
-            color: #6b7280;
-        }
-    </style>
 </head>
 <body>
 
@@ -100,136 +31,125 @@
 </header>
 
 <main>
-    <!-- مقدمة اختيار المسار -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">🧭 اختيار المسار العملي</h2>
+            <span class="eyebrow">اختيار ذاتي للمسار</span>
+            <h2 class="section-title">اختر مسارك العملي بعناية</h2>
             <p class="page-lead">
-                في هذا النموذج تقوم <strong>بتسجيل المسار العملي</strong> الذي ستتخصص فيه خلال المقرر.
-                المسار الذي تختاره هو الأساس لمشروعك العملي والامتحان العملي في المختبر.
-            </p>
-            <p class="page-meta">
-                إعداد: أ. أحمد عوني النتشة – خاص لطلبة فرع الخليل – مقرر الذكاء الاصطناعي وتطبيقاته (0/1117).
+                يختار الطالب <strong>مسارًا واحدًا فقط</strong> من المسارات الأربعة. هذا الاختيار سيكون
+                الأساس الذي تُبنى عليه طبيعة مشروع المسار والامتحان العملي في المختبر.
             </p>
 
-            <div class="info-box">
-                <ul>
-                    <li>يُسمح لكل طالب باختيار <strong>مسار واحد فقط</strong> من المسارات الأربعة.</li>
-                    <li>المسار المختار يحدد <strong>أسئلة مشروع المسار</strong> و<strong>محتوى الامتحان العملي</strong>.</li>
-                    <li>تأكد من إدخال بياناتك الجامعية (الاسم، الرقم الجامعي، الشعبة) بدقّة.</li>
-                    <li>في حال كنت منسقًا لمجموعة، قم بالتسجيل مرة واحدة باسم المجموعة كما هو موضّح في النموذج.</li>
-                </ul>
+            <div class="bento-grid">
+                <article class="bento-card large accent-blue">
+                    <h3>كيف تختار مسارك؟</h3>
+                    <p>
+                        اقرأ وصف كل مسار والوحدات المرتبطة به، ثم اختر المسار الذي يتوافق مع اهتمامك
+                        وقدرتك على تنفيذ مشروع عملي فيه. لا تختَر المسار لأنه يبدو أسهل، بل اختره لأنك
+                        تستطيع التعلّم والإنتاج من خلاله.
+                    </p>
+                    <div class="decision-matrix" aria-label="معايير اختيار المسار">
+                        <div>
+                            <strong>الاهتمام</strong>
+                            <span>ما المجال الذي ترغب في اكتشافه؟</span>
+                        </div>
+                        <div>
+                            <strong>المهارة</strong>
+                            <span>ما النوع الذي تستطيع التطبيق فيه؟</span>
+                        </div>
+                        <div>
+                            <strong>المخرج</strong>
+                            <span>ما المنتج النهائي الذي تود إنجازه؟</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="bento-card accent-violet">
+                    <h3>قرار واحد</h3>
+                    <p>اختر مسارًا واحدًا فقط، لأن المشروع والامتحان العملي سيتبعان هذا الاختيار.</p>
+                </article>
+                <article class="bento-card accent-green">
+                    <h3>لا توجد استمارة</h3>
+                    <p>هذه الصفحة للتوجيه والاختيار الذاتي، ولا تطلب إدخال بيانات الطالب.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- بطاقات المسارات -->
     <section class="section alt">
         <div class="container">
             <h2 class="section-title">بطاقات المسارات</h2>
             <p class="section-intro">
-                اقرأ وصف كل مسار والوحدات التطبيقية المرتبطة به، ثم اختر ما يناسب اهتماماتك وقدراتك
-                في نموذج التسجيل أسفل الصفحة.
+                البطاقات التالية تساعدك على فهم طبيعة كل مسار. لا توجد استمارة اعتماد أو إدخال بيانات في هذه الصفحة.
             </p>
 
             <div class="tracks-grid">
-                <!-- مسار الباحث -->
-                <article class="track-card">
-                    <h3 class="track-name">
-                        <span class="icon">🔍</span>
-                        مسار الباحث
-                    </h3>
-                    <p class="track-desc">
-                        مسار يناسب الطلبة المهتمين بالبيانات، البحث، والتحليل العلمي للنصوص والأسواق.
-                    </p>
-                    <ul>
-                        <li>الوحدة الخامسة – تحليل البيانات وتطبيقاتها</li>
-                        <li>الوحدة الثانية عشرة – الترجمة وتحليل النصوص</li>
-                        <li>الوحدة التاسعة – تحليل السوق وسلوك المستخدمين</li>
-                    </ul>
-                    <p class="track-note">
-                        مناسب لمن يحب الإحصاء، الجداول، والتحليل الهادئ للمعلومات.
-                    </p>
+                <article class="track-card researcher">
+                    <img class="track-image" src="../images/track-researcher.png" alt="صورة رمزية لمسار الباحث وتحليل البيانات" />
+                    <div class="track-content">
+                        <h3 class="track-name"><span>🔍</span> مسار الباحث</h3>
+                        <p class="track-desc">
+                            مسار يناسب الطلبة المهتمين بالبيانات، البحث، تحليل النصوص، وفهم الأسواق
+                            من خلال أدوات الذكاء الاصطناعي.
+                        </p>
+                        <ul>
+                            <li>الوحدة الخامسة – تحليل البيانات وتطبيقاتها</li>
+                            <li>الوحدة الثانية عشرة – الترجمة وتحليل النصوص</li>
+                            <li>الوحدة التاسعة – تحليل السوق وسلوك المستخدمين</li>
+                        </ul>
+                        <p class="track-note">مناسب لمن يحب الجداول، المقارنة، استخراج المؤشرات، وبناء استنتاجات مبنية على بيانات.</p>
+                    </div>
                 </article>
 
-                <!-- مسار الأدب والكتابة -->
-                <article class="track-card">
-                    <h3 class="track-name">
-                        <span class="icon">✍️</span>
-                        مسار الأدب والكتابة
-                    </h3>
-                    <p class="track-desc">
-                        مسار يركّز على الكتابة الإبداعية، صناعة المحتوى، وسرد القصص باستخدام أدوات الذكاء الاصطناعي.
-                    </p>
-                    <ul>
-                        <li>الوحدة السادسة – الكتابة الإبداعية وصناعة المحتوى الذكي</li>
-                        <li>الوحدة السابعة – سرد القصص التفاعلي</li>
-                        <li>الوحدة الثانية عشرة – الترجمة وتحليل النصوص</li>
-                    </ul>
-                    <p class="track-note">
-                        مناسب لمن يحب الكتابة، القصص، وتوليد الأفكار الإبداعية.
-                    </p>
+                <article class="track-card literature">
+                    <img class="track-image" src="../images/track-literature.png" alt="صورة رمزية لمسار الأدب والكتابة" />
+                    <div class="track-content">
+                        <h3 class="track-name"><span>✍️</span> مسار الأدب والكتابة</h3>
+                        <p class="track-desc">
+                            مسار يركّز على الكتابة الإبداعية، صناعة المحتوى، الترجمة، وسرد القصص
+                            باستخدام أدوات الذكاء الاصطناعي.
+                        </p>
+                        <ul>
+                            <li>الوحدة السادسة – الكتابة الإبداعية وصناعة المحتوى الذكي</li>
+                            <li>الوحدة السابعة – سرد القصص التفاعلي</li>
+                            <li>الوحدة الثانية عشرة – الترجمة وتحليل النصوص</li>
+                        </ul>
+                        <p class="track-note">مناسب لمن يحب الكتابة، القصص، تطوير الأفكار، وتحسين الأسلوب اللغوي.</p>
+                    </div>
                 </article>
 
-                <!-- مسار التصميم والفن -->
-                <article class="track-card">
-                    <h3 class="track-name">
-                        <span class="icon">🎨</span>
-                        مسار التصميم والفن
-                    </h3>
-                    <p class="track-desc">
-                        مسار بصري لمن يحب الصور، الفيديو، والصوتيات، ويحب إنتاج محتوى مرئي وإبداعي.
-                    </p>
-                    <ul>
-                        <li>الوحدة الحادية عشرة – تحرير الصور والفيديو وصناعة الموسيقى الذكية</li>
-                        <li>الوحدة السابعة – سرد القصص التفاعلي</li>
-                        <li>الوحدة العاشرة – الحملات الإعلانية والتسويق الشخصي الذكي</li>
-                    </ul>
-                    <p class="track-note">
-                        مناسب لمن لديهم ميول فنية وبصرية ويحبون تصميم محتوى جذاب.
-                    </p>
+                <article class="track-card design">
+                    <img class="track-image" src="../images/track-design.png" alt="صورة رمزية لمسار التصميم والفن" />
+                    <div class="track-content">
+                        <h3 class="track-name"><span>🎨</span> مسار التصميم والفن</h3>
+                        <p class="track-desc">
+                            مسار بصري يركّز على الصور، الفيديو، الصوتيات، والهوية الإبداعية بمساعدة
+                            أدوات الذكاء الاصطناعي.
+                        </p>
+                        <ul>
+                            <li>الوحدة الحادية عشرة – تحرير الصور والفيديو وصناعة الموسيقى الذكية</li>
+                            <li>الوحدة السابعة – سرد القصص التفاعلي</li>
+                            <li>الوحدة العاشرة – الحملات الإعلانية والتسويق الشخصي الذكي</li>
+                        </ul>
+                        <p class="track-note">مناسب لمن لديه ميول بصرية وفنية ويحب تحويل الأفكار إلى محتوى مرئي أو سمعي.</p>
+                    </div>
                 </article>
 
-                <!-- مسار البرمجة والتسويق وريادة الأعمال -->
-                <article class="track-card">
-                    <h3 class="track-name">
-                        <span class="icon">💻</span>
-                        مسار البرمجة والتسويق وريادة الأعمال
-                    </h3>
-                    <p class="track-desc">
-                        مسار يدمج بين تطوير الويب، الحملات الإعلانية، وتحليل السوق بروح ريادية.
-                    </p>
-                    <ul>
-                        <li>الوحدة الثامنة – تطوير صفحات الويب المعزز بالذكاء الاصطناعي</li>
-                        <li>الوحدة العاشرة – الحملات الإعلانية والتسويق الشخصي الذكي</li>
-                        <li>الوحدة التاسعة – تحليل السوق وسلوك المستخدمين</li>
-                    </ul>
-                    <p class="track-note">
-                        مناسب لمن يهتم بالتسويق الرقمي، المشاريع الصغيرة، والعمل الحر.
-                    </p>
+                <article class="track-card programming">
+                    <img class="track-image" src="../images/track-programming.png" alt="صورة رمزية لمسار البرمجة والتسويق وريادة الأعمال" />
+                    <div class="track-content">
+                        <h3 class="track-name"><span>💻</span> مسار البرمجة والتسويق وريادة الأعمال</h3>
+                        <p class="track-desc">
+                            مسار يدمج تطوير الويب، الحملات الرقمية، تحليل السوق، والتفكير الريادي
+                            في مشروع عملي واحد.
+                        </p>
+                        <ul>
+                            <li>الوحدة الثامنة – تطوير صفحات الويب المعزز بالذكاء الاصطناعي</li>
+                            <li>الوحدة العاشرة – الحملات الإعلانية والتسويق الشخصي الذكي</li>
+                            <li>الوحدة التاسعة – تحليل السوق وسلوك المستخدمين</li>
+                        </ul>
+                        <p class="track-note">مناسب لمن يهتم بصفحات الويب، التسويق الرقمي، المشاريع الصغيرة، والعمل الحر.</p>
+                    </div>
                 </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- نموذج Google Form -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">📝 نموذج تسجيل المسار</h2>
-            <p class="section-intro">
-                بعد الاطلاع على المسارات أعلاه، استخدم النموذج التالي لتسجيل بياناتك واختيار المسار النهائي.
-                يُرجى تعبئة جميع الحقول بدقة، والتأكّد من صحة رقمك الجامعي وشعبتك.
-            </p>
-
-            <div class="form-iframe-wrapper">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdoE9hropQbtaOqCI8Wq2_MPtxhMacn1jtLYr0ynJRkAWLXwQ/viewform?embedded=true"
-                        width="100%"
-                        height="900"
-                        frameborder="0"
-                        marginheight="0"
-                        marginwidth="0">
-                    Loading…
-                </iframe>
             </div>
         </div>
     </section>
@@ -238,9 +158,7 @@
 <footer class="site-footer">
     <div class="container footer-inner">
         <p>&copy; 2025 أ. أحمد عوني النتشة – فرع الخليل | مقرر الذكاء الاصطناعي وتطبيقاته (0/1117)</p>
-        <p class="footer-note">
-            هذا الموقع مرجع مساعد، ولا يغني عن التعليمات الرسمية المنشورة في البوابة الأكاديمية.
-        </p>
+        <p class="footer-note">هذا الموقع مرجع مساعد، ولا يغني عن التعليمات الرسمية المنشورة في البوابة الأكاديمية.</p>
     </div>
 </footer>
 

@@ -5,63 +5,16 @@
     <title>مقرر الذكاء الاصطناعي وتطبيقاته (0/1117)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <style>
-        /* تنسيق قسم كيف تستخدم الموقع */
-        .use-box {
-            background: #ffffff;
-            padding: 1.5rem;
-            border-radius: 18px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-            border: 1px solid #e5e7eb;
-            margin-top: 1rem;
-        }
-
-        .steps-flow {
-            margin-top: 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1rem;
-        }
-
-        .step-card {
-            background: #ffffff;
-            padding: 1.2rem;
-            border-radius: 16px;
-            text-align: center;
-            border: 1px solid #e5e7eb;
-            box-shadow: 0 8px 18px rgba(0,0,0,0.05);
-            transition: 0.2s ease;
-        }
-
-        .step-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.10);
-        }
-
-        .step-icon {
-            font-size: 2rem;
-            margin-bottom: 0.4rem;
-        }
-
-        .step-card a {
-            display: block;
-            margin-top: 0.5rem;
-            font-weight: 600;
-            color: var(--primary);
-        }
-    </style>
 </head>
 
 <body>
-
 <header class="site-header">
     <div class="container header-inner">
         <div class="logo-area">
             <div class="logo-circle">AI</div>
             <div class="logo-text">
                 <h1>مقرر الذكاء الاصطناعي وتطبيقاته (0/1117)</h1>
-                <p> فرع الخليل</p>
+                <p>فرع الخليل</p>
             </div>
         </div>
 
@@ -78,80 +31,155 @@
 </header>
 
 <main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-panel" style="--hero-image: url('images/hero-ai-course.png');">
+                <div class="hero-content">
+                    <span class="eyebrow">مختبر تعلّم تطبيقي</span>
+                    <h2>تعلّم الذكاء الاصطناعي من الفكرة إلى التطبيق</h2>
+                    <p>
+                        موقع إرشادي يساعدك على فهم المقرر، اختيار مسارك العملي، والاستعداد للمشروع
+                        والامتحان العملي بثقة ووضوح.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="pages/course-info.html">ابدأ من تعليمات المقرر</a>
+                        <a class="btn secondary" href="pages/track-registration.html">استكشف المسارات</a>
+                    </div>
+                </div>
+                <div class="hero-art" aria-hidden="true">
+                    <img src="images/hero-ai-course.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-scope" aria-labelledby="section-scope-title">
+        <div class="container">
+            <div class="scope-panel">
+                <div class="scope-copy">
+                    <span class="eyebrow">تنبيه مهم للطلبة</span>
+                    <h2 id="section-scope-title" class="section-title">هذا الموقع مخصص لشعب الأستاذ أحمد عوني النتشة فقط</h2>
+                    <div class="semester-badge">
+                        الفصل الدراسي الأول 1261
+                        <span>من العام 2026/2026</span>
+                    </div>
+                </div>
+
+                <div class="sections-list" aria-label="الشعب التي يغطيها الموقع">
+                    <article class="section-card">
+                        <div class="section-number">شعبة 3</div>
+                        <dl>
+                            <div>
+                                <dt>اليوم</dt>
+                                <dd>الأحد</dd>
+                            </div>
+                            <div>
+                                <dt>الوقت</dt>
+                                <dd>09:00 - 10:00</dd>
+                            </div>
+                            <div>
+                                <dt>المكان</dt>
+                                <dd>فرع الخليل، مختبر حاسوب 501</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <article class="section-card">
+                        <div class="section-number">شعبة 4</div>
+                        <dl>
+                            <div>
+                                <dt>اليوم</dt>
+                                <dd>الإثنين</dd>
+                            </div>
+                            <div>
+                                <dt>الوقت</dt>
+                                <dd>10:00 - 11:00</dd>
+                            </div>
+                            <div>
+                                <dt>المكان</dt>
+                                <dd>فرع الخليل، مختبر حاسوب 501</dd>
+                            </div>
+                        </dl>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <div class="container">
-            
-            <!-- عنوان رئيسي فقط -->
-            <h2 class="section-title">مرحبًا بكم في مقرر الذكاء الاصطناعي وتطبيقاته (0/1117)</h2>
+            <span class="eyebrow">خريطة العمل</span>
+            <h2 class="section-title">رحلة الطالب داخل المقرر</h2>
+            <p class="page-lead">
+                الصفحة ليست قائمة روابط؛ هي مسار واضح من فهم التعليمات إلى اختيار المسار ثم الاستعداد للمشروع.
+            </p>
 
-            <!-- كيف تستخدم هذا الموقع -->
-            <div class="use-box">
-                <h3>كيف تستخدم هذا الموقع؟</h3>
-                <ul style="margin-top: 0.7rem;">
-                    <li>اقرأ <strong>تعليمات المقرر</strong> لفهم الوحدات والتقييم.</li>
-                    <li>سجّل في المسار المناسب لك من خلال صفحة <strong>اختيار المسار</strong>.</li>
-                    <li>انتقل إلى <strong>مشروع المسار</strong> واختر سؤال مشروع واحد فقط.</li>
-                    <li>استخدم <strong>نموذج تقرير المشروع</strong> لكتابة تقريرك النهائي.</li>
-                    <li>اطلع على <strong>الأسئلة الشائعة</strong> وأدلة <strong>الموارد والأدوات</strong>.</li>
-                </ul>
-            </div>
-
-            <!-- مخطط التسلسل -->
-            <h3 class="section-title" style="margin-top: 2rem;">تسلسل العمل في المقرر</h3>
-            <p class="page-lead">اتبع هذه الخطوات بالترتيب لضمان سيرك بالشكل الصحيح:</p>
-
-            <div class="steps-flow">
-
-                <!-- خطوة 1 -->
-                <div class="step-card">
+            <div class="bento-grid">
+                <article class="bento-card large accent-blue">
                     <div class="step-icon">📘</div>
-                    <h4>1) تعليمات المقرر</h4>
-                    <p>التعرف على الوحدات وتوزيع العلامات.</p>
-                    <a href="pages/course-info.html">الانتقال ↗</a>
-                </div>
+                    <h3>ابدأ من الصورة الكاملة</h3>
+                    <p>اقرأ تعليمات المقرر لتفهم الوحدات التأسيسية، توزيع العلامات، وطبيعة الجزء العملي قبل اختيار أي مسار.</p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="pages/course-info.html">تعليمات المقرر</a>
+                    </div>
+                </article>
 
-                <!-- خطوة 2 -->
-                <div class="step-card">
+                <article class="bento-card accent-violet">
                     <div class="step-icon">🧭</div>
-                    <h4>2) اختيار المسار</h4>
-                    <p>سجل مسارك الرسمي عبر الفورم.</p>
-                    <a href="pages/track-registration.html">الانتقال ↗</a>
-                </div>
+                    <h3>اختر بوعي</h3>
+                    <p>المسار ليس تسجيلًا؛ هو قرار تعلّم يحدد مشروعك والامتحان العملي.</p>
+                </article>
 
-                <!-- خطوة 3 -->
-                <div class="step-card">
+                <article class="bento-card accent-green">
                     <div class="step-icon">📌</div>
-                    <h4>3) اختيار سؤال المشروع</h4>
-                    <p>اطلع على أسئلة مسارك واختر واحداً منها.</p>
-                    <a href="pages/track-project.html">الانتقال ↗</a>
-                </div>
+                    <h3>جهّز طريقة التسليم</h3>
+                    <p>أسئلة المشروع ستُنشر لاحقًا، لكن مكونات التقرير واضحة من الآن.</p>
+                </article>
 
-                <!-- خطوة 4 -->
-                <div class="step-card">
-                    <div class="step-icon">📝</div>
-                    <h4>4) نموذج تقرير المشروع</h4>
-                    <p>استخدم النموذج لإعداد التقرير النهائي.</p>
-                    <a href="pages/project-report.html">الانتقال ↗</a>
-                </div>
-
-                <!-- خطوة 5 -->
-                <div class="step-card">
-                    <div class="step-icon">❓</div>
-                    <h4>5) الأسئلة الأكثر تكرارًا</h4>
-                    <p>أجوبة لأكثر استفسارات الطلبة.</p>
-                    <a href="pages/faq.html">الانتقال ↗</a>
-                </div>
-
-                <!-- خطوة 6 -->
-                <div class="step-card">
+                <article class="bento-card large accent-amber">
                     <div class="step-icon">🛠️</div>
-                    <h4>6) الموارد والأدوات</h4>
-                    <p>أدوات ومواقع مساعدة لكل مسار.</p>
-                    <a href="pages/resources.html">الانتقال ↗</a>
-                </div>
-
+                    <h3>استخدم الأدوات كوسيلة للتعلّم لا كبديل للفهم</h3>
+                    <p>صفحة الموارد مرتبة حسب المسارات، وتعرض أدوات مجانية أو ذات خطة مجانية مع توضيح المهمة المناسبة لكل أداة.</p>
+                    <div class="hero-actions">
+                        <a class="btn secondary" href="pages/resources.html">استعراض الأدوات</a>
+                    </div>
+                </article>
             </div>
+        </div>
+    </section>
 
+    <section class="section alt">
+        <div class="container">
+            <h2 class="section-title">لمحة عن المسارات الأربعة</h2>
+            <p class="page-lead">
+                هذه لمحة سريعة فقط. التفاصيل الكاملة موجودة في صفحة اختيار المسار.
+            </p>
+
+            <div class="quick-tracks">
+                <article class="quick-track researcher">
+                    <div class="track-mini-icon">🔍</div>
+                    <h3>مسار الباحث</h3>
+                    <p>تحليل البيانات والنصوص والأسواق للوصول إلى رؤى واضحة.</p>
+                </article>
+
+                <article class="quick-track literature">
+                    <div class="track-mini-icon">✍️</div>
+                    <h3>مسار الأدب والكتابة</h3>
+                    <p>كتابة إبداعية، سرد قصصي، ترجمة، وصناعة محتوى ذكي.</p>
+                </article>
+
+                <article class="quick-track design">
+                    <div class="track-mini-icon">🎨</div>
+                    <h3>مسار التصميم والفن</h3>
+                    <p>صور وفيديو وصوتيات وهوية بصرية باستخدام أدوات الذكاء الاصطناعي.</p>
+                </article>
+
+                <article class="quick-track programming">
+                    <div class="track-mini-icon">💻</div>
+                    <h3>مسار البرمجة والتسويق وريادة الأعمال</h3>
+                    <p>تطوير صفحات ويب، حملات رقمية، وتحليل سوق لمشاريع ناشئة.</p>
+                </article>
+            </div>
         </div>
     </section>
 </main>

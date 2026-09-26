@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const nav = document.querySelector('.main-nav');
+    const activeLink = nav && nav.querySelector('a.active');
+
+    if (nav && activeLink && nav.scrollWidth > nav.clientWidth) {
+        const navBox = nav.getBoundingClientRect();
+        const linkBox = activeLink.getBoundingClientRect();
+        nav.scrollLeft += (linkBox.left + linkBox.width / 2) - (navBox.left + navBox.width / 2);
+    }
+
     const revealItems = document.querySelectorAll('.bento-card, .track-card, .resource-card, .quick-track, .faq-item, .placeholder-card, .delivery-list li');
 
     if ('IntersectionObserver' in window) {
